@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>¡MOKEPON!</title>
+
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        
+            <section id="Seleccionar-mascota">
+                <h1 class="titulo">¡MOKEPON! 🔥💧🌵</h1>
+
+                <h2>Elige a tu mascota:</h2>
+               
+              <div id="contenedorTarjetas" class="tarjetas"> 
+               
+            </div> 
+            
+                <button id="boton-mascota">Seleccionar</button>
+            </section>
+
+            <section id="ver-mapa">
+                <h2 class="subtitulo">Recorre el mapa con tu mokepon</h2> 
+                <canvas id="mapa"></canvas>
+                <button
+                    ontouchend="detenerMovimiento()"  
+                    onmouseup="detenerMovimiento()" 
+                    onmousedown="moverArriba()"
+                    ontouchstart="moverArriba()" 
+                >Arriba</button>
+                <div>
+                    <button 
+                        onmouseup="detenerMovimiento()"
+                        ontouchend="detenerMovimiento()" 
+                        onmousedown="moverIzquierda()"
+                        ontouchstart="moverIzquierda()"
+                    >Izquierda</button>
+                    <button 
+                        onmouseup="detenerMovimiento()"
+                        ontouchend="detenerMovimiento()" 
+                        onmousedown="moverAbajo()"
+                        ontouchstart="moverAbajo()"
+                    >Abajo</button>
+                    <button 
+                        onmouseup="detenerMovimiento()"
+                        ontouchend="detenerMovimiento()" 
+                        onmousedown="moverDerecha()"
+                        ontouchstart="moverDerecha()"
+                    >Derecha</button>
+                </div>
+            </section>
+
+            <section id="Seleccionar">
+                <h1 class="titulo">¡MOKEPON! 🔥💧🌵</h1>
+                
+                <h2>Elige tu ataque:</h2>
+
+                <div id="contenedorAtaques" class="tarjetas-ataques">
+                </div>
+
+                    <div id="Mensajes">
+                        <p id="resultado">(˵ ͡° ͜ʖ ͡°˵)</p>
+                        <section id="Reiniciar">
+                            <button id="Boton-reiniciar">Reiniciar</button>
+                        </section>
+                    </div>
+                        <div class="atakes">
+                            <div class="atakes-jugador">
+                                <p id="vidas-Jugador">0</p>
+                                <p id="Mascota-Jugador"></p>
+                                <div id="ataques-del-jugador"></div>
+                            </div>
+                            <div class="atakes-enemigo">
+                                <p id="vidas-Enemigo">0</p>
+                                <p id="Mascota-Enemigo"></p>
+                                <div id="ataques-del-enemigo"></div>
+                            </div>
+                        </div>
+        </section>
+        <script src="js/mokepon.js"></script>
+    </body>
+</html>
+
+<!---
+danieeso/danieeso is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->

@@ -1,0 +1,200 @@
+@font-face {
+    font-family: "8 bit Arcade" ;
+    src: url("8-bit\ Arcade\ In.ttf")
+}
+
+body {
+    background-color: #394966;
+    font-family: "8 bit Arcade";
+}
+
+
+.titulo {
+    font-family: "8 bit Arcade";
+    text-align: center;
+    color: darkkhaki;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 100px;
+    margin: 100px;
+}
+
+#Seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    color: #b9993a;
+    font-size: 70px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: 432px 432px;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 416px;
+    height: 209px;
+    background: #b9993a;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid rgb(133, 110, 42);
+    border-radius: 10px;
+    pointer-events: auto;
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.tarjetas-ataques {
+    display: flex;
+    grid-template-columns: 300px 300px 300px;
+    justify-items: stretch;
+}
+
+.tarjeta-de-mokepon img {
+    width: 193px;
+}
+
+#boton-mascota {
+    font-family: "8 bit Arcade";
+    width: 400px;
+    height: 65px;
+    background: #c81d1d;
+    padding: 10px;
+    box-shadow: 3px 7px 10px black;
+    box-sizing: border-box;
+    margin: 90px;
+    border: 2px solid rgb(77 5 5);
+    border-radius: 50px;
+    pointer-events: auto;
+    text-align: center;
+    font-size: 40px;
+}
+
+input {
+display: none;
+}
+
+input:checked + label{
+ background:  rgb(133, 110, 42);
+}
+
+#Seleccionar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    font-family: "8 bit Arcade";
+    background-color: #b9993a;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 3px 7px 10px black;
+    border: 2px solid rgb(133, 110, 42);
+    font-size: 33px;
+    display: grid;
+    margin: 10px;
+    width: 150px;
+}
+
+#Mensajes {
+    background: green;
+    width: 400px;
+    display: flex;
+    margin-top: 24px;
+    justify-content: space-around;
+    box-shadow: 3px 7px 10px black;
+    box-sizing: border-box;
+    border-radius: 27px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 47px;
+}
+
+#Boton-reiniciar{
+    font-family: "8 bit Arcade";
+    border: none;
+    background: green;
+    font-size: 40px;
+    margin: 20px;
+
+}
+
+.atakes {
+    display: grid;
+    grid-template-columns: 218px 218px;
+    margin-top: 20px;
+    justify-items: center;
+    border: 2px solid #856e2a;
+    background-color: #b9993a;
+    margin-bottom: 10px;
+    padding: 17px;
+}
+
+.atakes-jugador, .atakes-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+}
+
+#vidasJugador, #vidasEnemigo {
+    margin: unset;
+    font-size: 80px;
+}
+
+#ataques-del-jugador, #ataques-del-enemigo {
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button{
+    font-family: "8 bit Arcade";
+    width: 100px;
+    height: 65px;
+    background: #c81d1d;
+    padding: 10px;
+    box-shadow: 3px 7px 10px black;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid rgb(77 5 5);
+    border-radius: 50px;
+    pointer-events: auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+@media (max-width: 560px){
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 360px){
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
